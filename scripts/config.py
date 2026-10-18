@@ -27,8 +27,10 @@ class TrainingPipelineCfg:
     passes: int = 1
     wandb_project: str = "hubert-development"
     wandb_group: str = "hubert-one-pass"
-    lr_total_updates: int = 400000
+    lr_total_updates: int = 25000
     learning_rate: float = 0.0001
+    update_freq: int = 16
+    warmup_updates: int = 2000
 
     # Paths
     data_dir: Path = Path("data")

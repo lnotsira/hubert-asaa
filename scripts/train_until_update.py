@@ -157,6 +157,8 @@ def train_one_chunk(
         "optimization.stop_min_lr=-1",
         "optimization.skip_remainder_batch=false",
         f"+lr_scheduler.total_num_update={cfg.lr_total_updates}",
+        f"optimization.update_freq=[{cfg.update_freq}]",
+        f"lr_scheduler.warmup_updates={cfg.warmup_updates}",
 
         "dataset.required_batch_size_multiple=1",
         "dataset.disable_validation=false",
