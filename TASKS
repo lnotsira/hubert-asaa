@@ -1,0 +1,25 @@
+*-text-*
+
+The *specific* task list for ASAA
+
+aris
+---------------------------------------
+ - test training pipeline on the a30s
+   - fix torchaudio problem (hella dependency mismatch on the jupyter env)
+ - update chunk config for actual training
+
+azalea
+---------------------------------------
+ - paper writing
+
+sid
+---------------------------------------
+ - paper writing
+
+aryan
+---------------------------------------
+ - paper writing
+
+aidan
+---------------------------------------
+ - generate synthetic VOT-varied data

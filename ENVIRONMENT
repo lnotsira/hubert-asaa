@@ -1,0 +1,70 @@
+-*-text-*-
+
+HuBERT Environment Install
+==========================
+
+NOTE:
+The pipeline has been tested with:
+	- Python 3.10
+	- fairseq (local install)
+	- CPU-only pytorch
+	- Linux
+
+REQUIREMENTS
+============
+
+1	PYTHON 3.10
+-	-----------
+fairseq was not built to work with Python versions higher than 3.10.
+
+2	CONDA
+-	-----
+Conda is recommended for Python version handling (especially if you
+have a newer version installed).
+
+3	PYTORCH 2
+-	---------
+fairseq seems to only like Torch 2.0.1 and TorchAudio 2.0.2, don't
+ask me why, I still haven't figured that out.
+
+INSTALLATION
+============
+
+1	CONDA ENVIRONMENT
+-	-----------------
+You need to create a conda environment as fairseq is not built to work
+with any versions of Python newer than 3.10 (thanks facebook).
+
+	$ conda create -n hubert python=3.10
+	$ conda activate hubert
+
+2	INSTALL DEPENDENCIES
+-	--------------------
+Dependencies are in requirements.txt.
+
+	$ pip install -r requirements.txt
+
+3	INSTALL FAIRSEQ
+-	---------------
+Assuming that you have also cloned the submodules of the repository
+(if not, just blame git for your troubles), install fairseq from
+external/fairseq:
+
+	$ pip install -e external/fairseq
+
+RUNNING THE PIPELINE
+====================
+
+1	PREP LABELS
+-	-----------
+The following script automatically dumps MFCC features, trains k-means,
+generates .km labels, and creates dict.km.txt using the simple_kmeans
+pipeline from fairseq:
+
+	$ ./scripts/prepare_hubert_labels.sh
+
+2	LAUNCH HUBERT
+-	-------------
+Run the train_hubert.sh script:
+
+	$ ./scripts/train_hubert.sh
