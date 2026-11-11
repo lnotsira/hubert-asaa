@@ -48,6 +48,8 @@ def main() -> None:
     ):
         raise ValueError("Invalid chunk or pass range")
 
+    seed_chunk_prep = False
+
     if not cfg.kmeans_path.exists():
         print("no kmeans model found, learning it", flush=True)
 
@@ -58,6 +60,8 @@ def main() -> None:
             "--seed_chunk_id",
             "1",
         ])
+
+        seed_chunk_prep = True
     else:
         print("found kmeans model, reusing it", flush=True)
 
@@ -107,15 +111,18 @@ def main() -> None:
                     "set --start_pass and --start_chunk to the next chunk."
                 )
 
-            cmd_exec([
-                "python",
-                "-m",
-                "scripts.prep_chunk",
-                "--mode",
-                "train",
-                "--chunk_id",
-                str(chunk_id),
-            ])
+            if seed_chunk_prep and pass_id == 1 and chunk_id == 1:
+                print("reusing chunk 1 from kmeans prep", flush=True)
+            else:
+                cmd_exec([
+                    "python",
+                    "-m",
+                    "scripts.prep_chunk",
+                    "--mode",
+                    "train",
+                    "--chunk_id",
+                    str(chunk_id),
+                ])
 
             cmd_exec([
                 "python",
