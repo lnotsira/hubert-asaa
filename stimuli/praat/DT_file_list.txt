@@ -1,0 +1,7 @@
+DT_VOT_1.wav
+DT_VOT_2.wav
+DT_VOT_3.wav
+DT_VOT_4.wav
+DT_VOT_5.wav
+DT_VOT_6.wav
+DT_VOT_7.wav

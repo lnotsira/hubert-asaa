@@ -1,0 +1,48 @@
+VOT Stimuli
+===========
+
+This directory contains the audio stimuli generated using a modified
+version of Matthew Winn's Praat script. The resulting WAV files were
+used in the experiements conducted for this paper.
+
+The stimuli consist of a seven-step deer-tier continuum with target
+VOT values ranging from 10 to 70ms in 10ms increments. Resampled copies
+were made at 16khz for use with HuBERT.
+
+The original implementation used (version 30) and accompanying materials
+are available from the University of Minnesota repository:
+
+	https://github.com/ListenLab/VOT.git
+
+
+MODIFICATIONS
+-------------
+
+	The original script was modified to generate a seven-step
+	VOT continuum using a unified F0 level.
+
+	Covariance of aspiration-intensity was disabled, and the
+	interpolation procedure was corrected to handle single-step
+	F0 generation.
+
+REFERENCE
+---------
+
+	Matthew B. Winn; Manipulation of voice onset time in speech stimuli: A tutorial and flexible Praat script. J. Acoust. Soc. Am. 1 February 2020; 147 (2): 852–866. 
+	https://doi.org/10.1121/10.0000692
+
+COPYRIGHT
+---------
+
+	The original supplemental files (including the deer-tier
+	waveforms and Praat scripts) is distributed under the GNU
+	General Public License, version 3.
+
+	The modified script is distributed under the same license.
+	
+	See COPYING for the complete license text.
+
+	The original implementation and supplemental materials are
+	credited to Matthew B. Winn and University of Minnesota's 
+	ListenLab.
+
