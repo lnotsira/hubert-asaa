@@ -1,2 +1,16 @@
 **/.DS_Store
 ._.DS_Store
+
+*.log
+
+.hydra/
+activations/
+checkpoints/
+checkpoints_sae/
+data/
+feats/
+kmeans/
+km_seed/
+results/
+tblog/
+
