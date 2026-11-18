@@ -1535,7 +1535,7 @@ procedure set_variables_at_startup
 		##
 		###
 		###### -> 
-			vowel_cutback_to_VOT_ratio = 0.65
+			vowel_cutback_to_VOT_ratio = 0
 		
 		# Maximum duration of vowel to cut back
 		# This would prevent an entire short vowel from being eliminated

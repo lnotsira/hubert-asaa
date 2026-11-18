@@ -1,0 +1,8 @@
+stimulus,step,target_vot_ms,wav_path,duration_s
+DT_VOT_1,1,10,../16k/DT_VOT_1_p0.wav,0.529563
+DT_VOT_2,2,20,../16k/DT_VOT_2_p0.wav,0.539562
+DT_VOT_3,3,30,../16k/DT_VOT_3_p0.wav,0.549562
+DT_VOT_4,4,40,../16k/DT_VOT_4_p0.wav,0.559562
+DT_VOT_5,5,50,../16k/DT_VOT_5_p0.wav,0.569562
+DT_VOT_6,6,60,../16k/DT_VOT_6_p0.wav,0.579562
+DT_VOT_7,7,70,../16k/DT_VOT_7_p0.wav,0.589562

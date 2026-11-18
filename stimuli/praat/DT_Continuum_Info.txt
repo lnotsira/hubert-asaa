@@ -1,5 +1,5 @@
 Using Praat version 7.0
-Saving to parent folder (redacted)
+Saving to parent folder ~/devel/hubert-asaa/stimuli
 ###############################################
 SOUND SELECTION INFO
 User selected DT_Deer as the voiced endpoint
@@ -38,9 +38,9 @@ Added 0.05 silence at the onset of each sound
 Added 3 ms aspiration at the end for blending into the vowel
 
 Vowel-cutback information:
-For each 1 ms of VOT, 0.65 ms of vowel cutback
-(0.65 vowel-cutback ratio)
-Maximum vowel cutback actually used: 0.046
+For each 1 ms of VOT, 0 ms of vowel cutback
+(0 vowel-cutback ratio)
+Maximum vowel cutback actually used: 0
 Maximum vowel cutback duration permitted: 0.7 seconds
 
 
@@ -85,10 +85,10 @@ Output sounds maintained natural intensity-VOT relationship
 
 ###############################################
 Vowel onset intensitying ramping
-Step 1 half-ramped vowel onset intensity over the first 0.0007 s
-Step 2 half-ramped vowel onset intensity over the first 0.004 s
-Step 3 half-ramped vowel onset intensity over the first 0.007 s
-Step 4 half-ramped vowel onset intensity over the first 0.010 s
-Step 5 half-ramped vowel onset intensity over the first 0.014 s
-Step 6 half-ramped vowel onset intensity over the first 0.017 s
-Step 7 half-ramped vowel onset intensity over the first 0.020 s
+Step 1 half-ramped vowel onset intensity over the first 0 s
+Step 2 half-ramped vowel onset intensity over the first 0 s
+Step 3 half-ramped vowel onset intensity over the first 0 s
+Step 4 half-ramped vowel onset intensity over the first 0 s
+Step 5 half-ramped vowel onset intensity over the first 0 s
+Step 6 half-ramped vowel onset intensity over the first 0 s
+Step 7 half-ramped vowel onset intensity over the first 0 s
